@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- W3C Schema generado con XMLSpy v2019 sp1 (x64) (http://www.altova.com) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ciudad">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="España"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="edad">
+		<xs:simpleType>
+			<xs:restriction base="xs:byte">
+				<xs:enumeration value="24"/>
+				<xs:enumeration value="25"/>
+				<xs:enumeration value="26"/>
+				<xs:enumeration value="27"/>
+				<xs:enumeration value="29"/>
+				<xs:enumeration value="31"/>
+				<xs:enumeration value="32"/>
+				<xs:enumeration value="33"/>
+				<xs:enumeration value="34"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="entrenador">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Benito Kamela"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="equipo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre"/>
+				<xs:element ref="ciudad"/>
+				<xs:element ref="entrenador"/>
+				<xs:element ref="jugadores"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="equipos_de_futbol">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="equipo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="jugador">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre"/>
+				<xs:element ref="edad"/>
+				<xs:element ref="nacionalidad"/>
+			</xs:sequence>
+			<xs:attribute name="posicion">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="centro campistas"/>
+						<xs:enumeration value="defensa"/>
+						<xs:enumeration value="delantero"/>
+						<xs:enumeration value="portero"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="posicon">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="delantero"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="jugadores">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="jugador" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nacionalidad">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Argentina"/>
+				<xs:enumeration value="Canada"/>
+				<xs:enumeration value="España"/>
+				<xs:enumeration value="Italia"/>
+				<xs:enumeration value="Portugal"/>
+				<xs:enumeration value="Rumana "/>
+				<xs:enumeration value="Rusia"/>
+				<xs:enumeration value="camerunés"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="nombre">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Alan Brito"/>
+				<xs:enumeration value="Alberto Ramos"/>
+				<xs:enumeration value="Armando Jaleo  "/>
+				<xs:enumeration value="Ayose Rodriguez"/>
+				<xs:enumeration value="Carmelo coton"/>
+				<xs:enumeration value="Dario Perez"/>
+				<xs:enumeration value="Enrique Cido"/>
+				<xs:enumeration value="Francisco Rupto "/>
+				<xs:enumeration value="Josechu Leton"/>
+				<xs:enumeration value="Pacol Garte "/>
+				<xs:enumeration value="Pepe Benavente "/>
+				<xs:enumeration value="Pepe Santana"/>
+				<xs:enumeration value="Real Coholicos"/>
+				<xs:enumeration value="Rodrigo Lopez"/>
+				<xs:enumeration value="Roman on"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>
