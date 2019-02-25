@@ -1,0 +1,8 @@
+h1 { border:dotted 5px blue;
+-moz-border-radius: 75px;
+-webkit-border-radius: 75px;
+border-radius: 75px; text-align: center;
+color: blue ;
+font-size: 70px;
+font-family: georgia;
+background-position: left;
