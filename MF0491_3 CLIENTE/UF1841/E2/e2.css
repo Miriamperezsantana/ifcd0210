@@ -81,6 +81,37 @@ header nav a:hover {
 	/*flex:1;*/
 }
  
+.horizontal { 	
+			display: flex;
+			/*background-color:blue;*/
+			justify-content: space-around;
+			flex-direction: row;
+			border:0px solid #006699;
+			align-items: flex-start;
+			width: 100%;
+			height: auto; overflow: hidden;
+		}
+.vertical { 	
+			display: flex;
+			/*background-color:white;*/
+			justify-content: space-around;
+			flex-direction: column;
+			border:0px solid #006699;
+			align-items: center;
+			width: 100%;
+			height: auto; overflow: hidden;
+		}
+
+
+		.contenedor {
+	max-width: 1200px;
+	margin:50px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .main article {
 	margin-bottom: 20px;
 	padding-bottom:20px;
@@ -147,7 +178,7 @@ footer .social {
 }
  
 footer .social a {
-	color:blue;
+	color:#fff;
 	text-decoration: none;
 	padding:10px;
 	display: inline-block;
