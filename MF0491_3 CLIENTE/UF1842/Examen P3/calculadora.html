@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <meta charset="utf-8">
+    <title>Calculadora con Javascript</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" type="text" href="calculadora.js">
+  
+</head>
+
+<body onload="pulsada();">
+
+    <div id="cabecera">
+    <h2>Calculadora Funcional</h2>
+    <h3>HTML/CSS/JavaScript</h3>
+    </div>
+
+<!-- Calculadora -->
+
+<div id="calculadora">
+     <!--pantalla y tecla limpiar -->
+      <div class="parteSuperior">
+          <span class="limpiar" onclick="pulsada('C')">C</span>
+          <div class="pantalla"> </div> <!--el espacio es para que exista nodeValue-->
+            </div>
+            <div class="teclas">
+              <!-- operadores y otras teclas -->
+                <span onclick="pulsada('7')">7</span>
+                <span onclick="pulsada('8')">8</span>
+                <span onclick="pulsada('9')">9</span>
+                <span class="operador" onclick="pulsada('+')">+</span>
+                <span onclick="pulsada('4')">4</span>
+                <span onclick="pulsada('5')">5</span>
+                <span onclick="pulsada('6')">6</span>
+                <span class="operador" onclick="pulsada('-')">-</span>
+                <span onclick="pulsada('1')">1</span>
+                <span onclick="pulsada('2')">2</span>
+                <span onclick="pulsada('3')">3</span>
+                <span class="operador" onclick="pulsada('/')">÷</span>
+                <span onclick="pulsada('0')">0</span>
+                <span onclick="pulsada('.')">.</span>
+                <span class="igual" onclick="pulsada('=')">=</span>
+                <span class="operador" onclick="pulsada('*')">x</span>
+            </div>
+
+     </div>
+   <script src="js/calculadora.js"></script>
+</body>
+
+</html>
