@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sitema_solar SYSTEM "C:\Users\pc\Desktop\Examen\dtd.dtd">
+<sitema_solar>
+	<p>Es el sistema planetario en el que se encuentran la Tierra y otros objetos astronómicos que giran directa o indirectamente en una órbita alrededor de una única estrella conocida como el Sol.</p>
+	<los_planetas>
+		<p>Los ocho planetas que componen el sistema solar son, de menor a mayor distancia respecto al Sol, los siguientes:</p>
+		<ul>
+			<li>Mercurio</li>
+			<li>Venus</li>
+			<li>Tierra</li>
+			<li>Marte</li>
+			<li>Jupiter</li>
+			<li>Saturno</li>
+			<li>urano</li>
+			<li>Neptuno</li>
+		</ul>
+	</los_planetas>
+</sitema_solar>

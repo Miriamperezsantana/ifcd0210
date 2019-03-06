@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD generado con XMLSpy v2019 sp1 (x64) (http://www.altova.com) -->
+<!ELEMENT p (#PCDATA)>
+<!ELEMENT li (#PCDATA)>
+<!ELEMENT ul (li+)>
+<!ELEMENT los_planetas (p, ul)>
+<!ELEMENT sitema_solar (p, los_planetas)>
