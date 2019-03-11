@@ -1,0 +1,73 @@
+body {
+	font-family: 
+	sans-serif; 
+	text-align:center;
+}
+
+#calculadora { 
+	font: bold 14px Arial,
+	sans-serif; background-color: #006699; 
+	border-radius: 10px; height: auto; 
+	margin: 0 auto;
+    padding: 20px 20px 9px; 
+    width: 285px;
+}
+
+.parteSuperior .pantalla{ 
+	background-color: rgba(0, 0, 0, 0.2); 
+	border-radius: 3px; 
+	color: #FFF; 
+	float: right; 
+	font-size: 17px; 
+	height: 60px; 
+	margin-bottom: 15px;
+	letter-spacing: 1px; 
+	line-height: 40px; 
+	padding: 0 10px; 
+	text-align: right; 
+	width: 180px;
+	overflow-y: scroll;
+}
+
+.teclas, .parteSuperior {
+	overflow: hidden; 
+}
+
+.teclas span, .parteSuperior span.limpiar { 
+    background-color: #FFF;
+    border-radius: 50px; 
+    color: black; 
+    cursor: pointer;
+    float: left; 
+    height: 36px; 
+    line-height: 36px; 
+    margin: 0 7px 11px 0; 
+    text-align: center; 
+    transition: all 0.4s ease 0s; 
+    width: 66px;
+}
+
+.parteSuperior span.limpiar { 
+	background-color:#FF7C87;
+	border-radius: 10px;
+}
+
+.teclas span.operador { 
+	background-color: #FFDBBB; 
+	margin-right: 0; 
+}
+
+.teclas span.igual { 
+	background-color: #FFDF92; 
+	color:black ;
+}
+.parteSuperior span.limpiar, { 
+	background-color: #FFFFA8; 
+	color: #FFFFFF; 
+}
+
+.teclas span:hover, .teclas span.igual:hover, .parteSuperior span.limpiar:hover {
+    background-color: #c0c0c0; 
+    color: #FFFFFF;
+}
+
