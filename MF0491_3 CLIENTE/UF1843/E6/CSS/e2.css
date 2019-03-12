@@ -5,7 +5,7 @@
 }
  
 .contenedor {
-	background:#ccc;
+	background:black;
 	width:90%;
 	max-width:1000px;
 	margin:auto;
@@ -163,6 +163,15 @@ aside .widget {
 	background: #d35400;
 	height:150px;
 	margin:10px;
+
+}
+aside .widget:hover {
+	background: black;
+	height:250px;
+	margin:10px;
+	color: yellow;
+	font-size: 2em;
+	
 }
  
 footer {
