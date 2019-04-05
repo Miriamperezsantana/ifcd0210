@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UML Class Diagram">
+  <ClassDiagramComponents>
+    <Class name="Cliente " package="" visibility="public" xPosition="48.0" yPosition="26.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cliente Personal" package="" visibility="public" xPosition="48.0" yPosition="169.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cliente Coorporativo" package="" visibility="public" xPosition="316.0" yPosition="169.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Tarjeta Credito" package="" visibility="public" xPosition="48.0" yPosition="326.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Contrato" package="" visibility="public" xPosition="316.0" yPosition="326.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Pedido" package="" visibility="public" xPosition="316.0" yPosition="15.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Linea de Pedido" package="" visibility="public" xPosition="538.0" yPosition="15.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Producto" package="" visibility="public" xPosition="757.0" yPosition="15.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Vendedor" package="" visibility="public" xPosition="645.0" yPosition="169.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Sistema de Pago" package="" visibility="public" xPosition="184.0" yPosition="466.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Realiza" source="Cliente " target="Pedido" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="Formado por " source="Linea de Pedido" target="Producto" type="Aggregation" sourceCardinality="0..1" targetCardinality="0..*" collectionType="List"/>
+    <HasRelation name="Atendido por " source="Cliente Coorporativo" target="Vendedor" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="Usa como medio de pago" source="Cliente Personal" target="Tarjeta Credito" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Usa como medio de pago" source="Cliente Coorporativo" target="Contrato" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Consta de " source="Pedido" target="Linea de Pedido" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Tarjeta Credito" target="Sistema de Pago"/>
+    <IsRelation name="is" source="Cliente Personal" target="Cliente "/>
+    <IsRelation name="is" source="Contrato" target="Sistema de Pago"/>
+    <IsRelation name="is" source="Cliente Coorporativo" target="Cliente "/>
+    <UseRelation name="Una cuenta " source="Vendedor" target="Sistema de Pago" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
